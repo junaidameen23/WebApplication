@@ -18,9 +18,10 @@ namespace WebApplication.Controllers
             _logger = logger;
         }
 
+        [HttpGet("api/GetHome")]
         public IActionResult Index()
         {
-            return View();
+            return Ok("Return from Index method!");
         }
 
         public IActionResult Privacy()
